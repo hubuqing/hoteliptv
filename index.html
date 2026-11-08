@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Hotel IPTV & Guest Experience Platform | HuiBu</title>
+<meta name="description" content="All-in-one hotel IPTV, in-room entertainment, QR dining, digital concierge and smart room control. Multicast live TV, PMS integration, cloud or on-premise deployment.">
+<meta name="theme-color" content="#5B3DE2">
+<meta name="author" content="HuiBu Technology">
+<link rel="canonical" href="https://hoteliptv.example.com/">
+<link rel="alternate" hreflang="en" href="https://hoteliptv.example.com/?lang=en">
+<link rel="alternate" hreflang="zh" href="https://hoteliptv.example.com/?lang=zh">
+<link rel="alternate" hreflang="es" href="https://hoteliptv.example.com/?lang=es">
+<link rel="alternate" hreflang="fr" href="https://hoteliptv.example.com/?lang=fr">
+<link rel="alternate" hreflang="de" href="https://hoteliptv.example.com/?lang=de">
+<link rel="alternate" hreflang="ar" href="https://hoteliptv.example.com/?lang=ar">
+<link rel="alternate" hreflang="x-default" href="https://hoteliptv.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Smart Hotel IPTV & Guest Experience Platform | HuiBu">
+<meta property="og:description" content="All-in-one hotel IPTV, QR dining, digital concierge and smart room control.">
+<meta property="og:site_name" content="HuiBu Hotel IPTV">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"HuiBu Technology","url":"https://hoteliptv.example.com/","description":"Global provider of hotel IPTV, in-room entertainment and digital guest experience platforms.","contactPoint":{"@type":"ContactPoint","contactType":"sales","availableLanguage":["English","Chinese","Spanish","French","German","Arabic"]}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content" data-i18n="a11y.skip">Skip to main content</a>
+
+<!-- reusable QR glyph -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="qr-glyph" viewBox="0 0 21 21">
+<rect width="21" height="21" fill="#fff"/>
+<g fill="#111827">
+<path d="M0 0h7v7H0zM1 1v5h5V1zM2 2h3v3H2zM14 0h7v7h-7zM15 1v5h5V1zM16 2h3v3h-3zM0 14h7v7H0zM1 15v5h5v-5zM2 16h3v3H2z"/>
+<path d="M8 0h2v2H8zM11 0h1v1h-1zM8 3h1v2H8zM10 3h3v1h-3zM9 6h2v1H9zM12 5h2v2h-2zM14 8h2v1h-2zM17 8h1v2h-1zM19 8h2v1h-2zM8 8h3v2H8zM9 11h2v1H9zM12 11h1v2h-1zM14 11h3v1h-3zM18 11h1v1h-1zM8 14h2v2H8zM11 14h1v1h-1zM13 15h2v2h-2zM16 14h1v2h-1zM18 15h3v1h-3zM8 18h3v1H8zM12 18h2v2h-2zM15 18h1v1h-1zM17 19h2v1h-2zM19 17h2v2h-2z"/>
+</g></symbol></svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-shell">
+    <a class="brand" href="#hero" aria-label="Home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="1" y="1" width="38" height="38" rx="11" fill="#5B3DE2"/>
+        <path d="M8 18l12-8 12 8v12H8V18z" fill="#fff" opacity=".95"/>
+        <path d="M6 18l14-9 14 9" fill="none" stroke="#F2D9A8" stroke-width="2.4" stroke-linecap="round"/>
+        <rect x="17" y="22" width="6" height="8" rx="1" fill="#5B3DE2"/>
+        <rect x="11" y="20" width="3" height="3" rx=".6" fill="#5B3DE2"/>
+        <rect x="26" y="20" width="3" height="3" rx=".6" fill="#5B3DE2"/>
+      </svg>
+      <span class="brand-name">Hotel<span>IPTV</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#hero" class="active" data-i18n="nav.hotelTv">Hotel TV</a>
+      <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
+      <a href="#stories" data-i18n="nav.stories">Stories</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#integrations" data-i18n="nav.integrations">Integrations</a>
+      <a href="#pricing" data-i18n="nav.deployment">Deployment</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg>
+          <span id="langCode">EN</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang-menu" id="langMenu" role="menu"></div>
+      </div>
+      <a href="#book-demo" class="btn btn-primary btn-sm" data-i18n="nav.bookDemo">Book a Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <a href="#hero" data-i18n="nav.hotelTv">Hotel TV</a>
+      <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
+      <a href="#stories" data-i18n="nav.stories">Stories</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#integrations" data-i18n="nav.integrations">Integrations</a>
+      <a href="#pricing" data-i18n="nav.deployment">Deployment</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#book-demo" data-i18n="nav.bookDemo">Book a Demo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <svg class="hero-wave" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 220 C 260 90, 520 300, 820 170 S 1240 60, 1440 150 L1440 320 L0 320Z" fill="#141033" opacity=".55"/>
+    <path d="M0 260 C 300 160, 560 320, 900 200 S 1260 130, 1440 200 L1440 320 L0 320Z" fill="#1B1150" opacity=".5"/>
+  </svg>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="hero-badge"><span class="dot"></span><span data-i18n="hero.badge">HuiBu Technology · Hotel IPTV Platform</span></span>
+      <h1><span data-i18n="hero.title1">Smart Hotel IPTV &amp;</span><em data-i18n="hero.title2">Guest Experiences.</em></h1>
+      <p class="hero-lead" data-i18n="hero.lead">Transform in-room entertainment and guest operations. One platform unifies HD live TV, movies &amp; OTT streaming, instant QR dining, room service requests and connected IoT room controls — with zero app downloads.</p>
+      <div class="hero-actions">
+        <a href="#book-demo" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Book a demo <span class="arrow">→</span></a>
+        <a href="#solutions" class="btn btn-ghost-dark btn-lg" data-i18n="hero.cta2">Explore Solutions</a>
+      </div>
+      <div class="hero-rating">
+        <span class="stars">★★★★★</span>
+        <span><strong data-i18n="hero.ratingScore">Rated 4.9 / 5</strong> <span data-i18n="hero.ratingText">on HotelTechReport · #1 Guest Experience Platform</span></span>
+      </div>
+    </div>
+
+    <div class="device-stage" aria-hidden="true">
+      <div class="tv-wrap">
+        <div class="tv-frame"><div class="tv-screen">
+          <div class="tv-ui">
+            <div class="tv-side">
+              <div class="tv-hotel">GRAND AURORA</div>
+              <div class="tv-welcome">Welcome back,<br><span>Mr. Smith</span></div>
+              <div class="tv-menu"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="tv-main">
+              <div class="tv-apps"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="tv-tiles"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="tv-dock"><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="qr-stand">
+        <div class="stand-brand">GRAND AURORA</div>
+        <svg viewBox="0 0 21 21" style="width:72%;margin:6% auto"><use href="#qr-glyph"/></svg>
+        <div class="stand-title">ROOM DINING</div>
+        <div class="stand-note">Scan to order · No app</div>
+      </div>
+
+      <div class="phone-wrap"><div class="phone-frame"><div class="phone-screen">
+        <div class="phone-notch"></div>
+        <div class="phone-head">Room Dining</div>
+        <div class="phone-pill"><i></i><i></i><i></i></div>
+        <div class="phone-card"><i></i><div class="phone-lines"><i></i><i></i><i></i></div></div>
+        <div class="phone-card"><i class="b"></i><div class="phone-lines"><i></i><i></i><i></i></div></div>
+        <div class="phone-card"><i class="c"></i><div class="phone-lines"><i></i><i></i><i></i></div></div>
+        <div class="phone-tabbar"><i></i><i></i><i></i><i></i></div>
+      </div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ECOSYSTEM STRIP ============ -->
+<section class="eco-strip">
+  <div class="container eco-grid">
+    <div class="eco-card reveal"><div class="eco-icon" style="background:#EEF2FF;color:#5B3DE2">▣</div><h3 data-i18n="eco.1t">Live TV &amp; OTT</h3><p data-i18n="eco.1d">HD channels, EPG guide and streaming apps on the big screen</p></div>
+    <div class="eco-card reveal"><div class="eco-icon" style="background:#ECFDF5;color:#059669">◈</div><h3 data-i18n="eco.2t">All in One Platform</h3><p data-i18n="eco.2d">TV, dining, services and room control in one connected journey</p></div>
+    <div class="eco-card reveal"><div class="eco-icon" style="background:#FFFBEB;color:#D97706">◉</div><h3 data-i18n="eco.3t">Dining &amp; Room Service</h3><p data-i18n="eco.3d">Contactless QR ordering delivered straight to your kitchen</p></div>
+    <div class="eco-card reveal"><div class="eco-icon" style="background:#F0F9FF;color:#0284C7">✧</div><h3 data-i18n="eco.4t">Smart Room Controls</h3><p data-i18n="eco.4d">Lighting, climate and curtains from phone or TV screen</p></div>
+    <div class="eco-card reveal"><div class="eco-icon" style="background:#FFF1F2;color:#E11D48">♥</div><h3 data-i18n="eco.5t">Happier Guests</h3><p data-i18n="eco.5d">Higher satisfaction, more ancillary revenue, lasting loyalty</p></div>
+  </div>
+</section>
+
+<!-- ============ INTRO HEAD ============ -->
+<section class="section-tight">
+  <div class="container section-head reveal">
+    <span class="eyebrow" data-i18n="intro.eyebrow">Complete in-room ecosystem</span>
+    <h2 data-i18n="intro.title">Engineered for modern hospitality &amp; interactive entertainment</h2>
+    <p data-i18n="intro.sub">From big-screen Hotel IPTV and OTT streaming to mobile QR dining and room services — all synchronized in real time.</p>
+  </div>
+</section>
+
+<!-- ============ ROADMAP + SOLUTIONS ============ -->
+<section class="section" id="solutions">
+  <div class="container">
+    <div class="panel roadmap reveal">
+      <div class="section-head">
+        <span class="eyebrow soft" data-i18n="road.eyebrow">Interactive guest roadmap</span>
+        <h2 data-i18n="road.title">The Complete In-Room QR Experience Flow</h2>
+        <p data-i18n="road.sub">From room check-in to dining, automation, and checkout — trace how effortless the guest journey is.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-row">
+          <div class="tl-card left"><div class="tl-step" data-i18n="road.1step">Step 01 · Zero app install</div><h3 data-i18n="road.1t">Scan Room QR</h3><p data-i18n="road.1d">The guest scans the dynamic QR code on the TV welcome screen or bedside stand with any smartphone camera.</p><span class="tl-chip" data-i18n="road.1chip">✓ Instant Wi-Fi &amp; guest session sync</span></div>
+          <div class="tl-num">01</div>
+          <div class="tl-visual right"><div class="tl-badge" data-i18n="road.badgeNoDownload">NO DOWNLOAD</div></div>
+        </div>
+        <div class="timeline-row">
+          <div class="tl-visual"><div class="tl-illus"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="tl-num">02</div>
+          <div class="tl-card right"><div class="tl-step" data-i18n="road.2step">Step 02 · Kitchen KOT integrated</div><h3 data-i18n="road.2t">Browse &amp; Order Dining</h3><p data-i18n="road.2d">A high-definition digital menu opens with dietary tags. Guests customize portions and send orders straight to the kitchen POS.</p><span class="tl-chip" data-i18n="road.2chip">✓ Direct kitchen print with room number</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="tl-card left"><div class="tl-step" data-i18n="road.3step">Step 03 · Housekeeping dispatch</div><h3 data-i18n="road.3t">Request Room Services</h3><p data-i18n="road.3d">Extra towels, water, dental kits or evening turn-down — requested in seconds without calling the front desk.</p><span class="tl-chip" data-i18n="road.3chip">✓ Dispatched instantly to staff handhelds</span></div>
+          <div class="tl-num">03</div>
+          <div class="tl-visual right"><span class="tl-badge" data-i18n="road.badge1Tap">1-TAP AMENITIES</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="tl-visual"><div class="tl-illus"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="tl-num">04</div>
+          <div class="tl-card right"><div class="tl-step" data-i18n="road.4step">Step 04 · IoT connected room</div><h3 data-i18n="road.4t">Smart Room Automation</h3><p data-i18n="road.4d">The phone becomes a room controller: AC temperature, lighting scene presets and motorized curtains.</p><span class="tl-chip" data-i18n="road.4chip">✓ Scene presets: Relax, Sleep &amp; Ambient</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="tl-card left"><div class="tl-step" data-i18n="road.5step">Step 05 · 24/7 dedicated care</div><h3 data-i18n="road.5t">Call Waiter &amp; Guest Care</h3><p data-i18n="road.5d">One tap calls the service desk, while direct messaging handles concierge requests at any hour.</p><span class="tl-chip" data-i18n="road.5chip">✓ Desk alert &amp; WhatsApp concierge</span></div>
+          <div class="tl-num">05</div>
+          <div class="tl-visual right"><span class="tl-badge" data-i18n="road.badgeCare">INSTANT ASSISTANCE</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="tl-visual"><div class="tl-illus"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="tl-num">06</div>
+          <div class="tl-card right"><div class="tl-step" data-i18n="road.6step">Step 06 · Ancillary revenue</div><h3 data-i18n="road.6t">Local Tours &amp; Hotel Spa</h3><p data-i18n="road.6d">Guests discover spa packages, gym timings, conference rentals and verified local experiences.</p><span class="tl-chip" data-i18n="road.6chip">✓ Increases ancillary guest spend</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- solution split cards -->
+    <div class="solution-stack" style="margin-top:1.6rem">
+
+      <article class="split reveal" data-steps>
+        <div class="split-copy">
+          <span class="eyebrow" data-i18n="sol1.eyebrow">In-room dining &amp; ordering</span>
+          <h3 data-i18n="sol1.title">Frictionless QR dining &amp; mobile ordering</h3>
+          <p class="accent" data-i18n="sol1.accent">Scan TV or bedside QR stand — zero app downloads required.</p>
+          <p class="body" data-i18n="sol1.body">Enable guests to browse your full digital menu with food photography, filter by dietary preferences, select portion sizes, and place orders directly to the kitchen with their room number automatically attached.</p>
+          <ul class="check-list">
+            <li><span class="tick">✓</span><span data-i18n="sol1.li1"><strong>Zero App Install:</strong> Camera QR scan from TV or acrylic stand</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol1.li2"><strong>Food Order:</strong> Dietary filters &amp; direct kitchen POS print</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol1.li3"><strong>Room Amenities:</strong> Housekeeping, water, towels &amp; cleaning</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol1.li4"><strong>Live Tracking:</strong> Cooking status, 1-tap waiter &amp; 24/7 hotline</span></li>
+          </ul>
+          <a href="#book-demo" class="text-link" data-i18n="sol1.cta">Request a demo for QR Dining <span class="arrow">→</span></a>
+        </div>
+        <div>
+          <div class="split-visual">
+            <div class="ui-mock">
+              <div class="ui-mock-head"><b data-i18n="ui.dining">Room Dining</b><span data-i18n="ui.orderPlaced">✓ Order placed</span></div>
+              <div class="ui-mock-tabs"><i></i><i></i><i></i></div>
+              <div class="ui-mock-row"><i></i><div class="ui-mock-lines"><i></i><i></i><i></i></div></div>
+              <div class="ui-mock-row"><i class="b"></i><div class="ui-mock-lines"><i></i><i></i><i></i></div></div>
+              <div class="ui-mock-row"><i class="c"></i><div class="ui-mock-lines"><i></i><i></i><i></i></div></div>
+              <div class="ui-mock-float">✓ <span data-i18n="ui.roomNo">Room 1208</span></div>
+            </div>
+          </div>
+          <div class="demo-steps" data-step-buttons>
+            <button class="active">01 · <span data-i18n="step.liveDemo">Live Demo</span></button>
+            <button>02 · <span data-i18n="step.scanMenu">Scan Menu</span></button>
+            <button>03 · <span data-i18n="step.instantOrder">Instant Order</span></button>
+          </div>
+          <div class="demo-progress"><i></i></div>
+        </div>
+      </article>
+
+      <article class="split reverse reveal" data-steps>
+        <div class="split-copy">
+          <span class="eyebrow" style="background:#ECFDF5;color:#059669" data-i18n="sol2.eyebrow">Connected smart rooms</span>
+          <h3 data-i18n="sol2.title">Control your entire room from your phone</h3>
+          <p class="accent" data-i18n="sol2.accent">Offer personalized comfort to every guest at their fingertips.</p>
+          <p class="body" data-i18n="sol2.body">With compatible hardware in place, guests control ambient lighting, fan speeds, air conditioning and motorized curtains from their phone or TV screen — without hunting for physical remotes.</p>
+          <ul class="check-list">
+            <li><span class="tick">✓</span><span data-i18n="sol2.li1"><strong>Scene Presets:</strong> Relax, Ambient &amp; Sleep lighting modes</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol2.li2"><strong>Climate Control:</strong> Temperature slider &amp; fan speed</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol2.li3"><strong>Motorized Curtains:</strong> 1-tap drapes &amp; master shutoff</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol2.li4"><strong>Hardware Agnostic:</strong> Works with leading relays &amp; controllers</span></li>
+          </ul>
+          <a href="#book-demo" class="text-link" data-i18n="sol2.cta">Request a demo for Smart Rooms <span class="arrow">→</span></a>
+        </div>
+        <div>
+          <div class="split-visual">
+            <div class="room-controls">
+              <div class="room-ctrl"><div class="ic">❄</div><b data-i18n="ui.ac">Air Conditioning</b><span>22°C · <span data-i18n="ui.cooling">Cooling</span></span><div class="bar"><i></i></div></div>
+              <div class="room-ctrl"><div class="ic">☀</div><b data-i18n="ui.lighting">Lighting</b><span data-i18n="ui.relaxScene">Relax scene · 65%</span><div class="bar"><i style="width:65%"></i></div></div>
+              <div class="room-ctrl"><div class="ic">▤</div><b data-i18n="ui.curtains">Curtains</b><span data-i18n="ui.halfOpen">Half open</span><div class="bar"><i style="width:50%"></i></div></div>
+              <div class="room-ctrl"><div class="ic">◉</div><b data-i18n="ui.scenes">Scenes</b><span>Relax · Sleep · Ambient</span><div class="bar"><i style="width:80%"></i></div></div>
+            </div>
+          </div>
+          <div class="demo-steps" data-step-buttons>
+            <button class="active">01 · <span data-i18n="step.suiteDemo">Live Suite Demo</span></button>
+            <button>02 · <span data-i18n="step.roomRemote">Room Remote</span></button>
+            <button>03 · <span data-i18n="step.smartComfort">Smart Comfort</span></button>
+          </div>
+          <div class="demo-progress"><i></i></div>
+        </div>
+      </article>
+
+      <article class="split reveal" data-steps>
+        <div class="split-copy">
+          <span class="eyebrow" style="background:#F0F9FF;color:#0284C7" data-i18n="sol3.eyebrow">In-room hotel IPTV &amp; OTT</span>
+          <h3 data-i18n="sol3.title">Live TV, OTT &amp; on-demand entertainment for every guest room</h3>
+          <p class="accent" data-i18n="sol3.accent">A complete in-room entertainment experience — beautifully branded for your hotel.</p>
+          <p class="body" data-i18n="sol3.body">Deliver personalized welcome screens, Live TV with EPG, movies &amp; shows on demand, and leading OTT apps through one elegant hotel TV interface. Guests can scan the on-screen QR for Wi-Fi, dining and services.</p>
+          <ul class="check-list">
+            <li><span class="tick">✓</span><span data-i18n="sol3.li1">Guest welcome, room info &amp; hotel branding</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol3.li2">Live TV + EPG + channel browsing</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol3.li3">VOD + OTT apps in one interface</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol3.li4">QR handoff to Wi-Fi, dining &amp; services</span></li>
+          </ul>
+          <a href="#book-demo" class="text-link" data-i18n="common.requestDemo">Request a demo <span class="arrow">→</span></a>
+        </div>
+        <div>
+          <div class="split-visual">
+            <div class="ui-tv">
+              <div class="ui-tv-bar"><i></i><i></i><i></i></div>
+              <div class="ui-tv-body">
+                <div class="ui-tv-side"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="ui-tv-main">
+                  <div class="ui-tv-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="ui-tv-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-steps" data-step-buttons>
+            <button class="active">01 · <span data-i18n="step.tvDemo">Live TV Demo</span></button>
+            <button>02 · <span data-i18n="step.tvGuide">Interactive TV Guide</span></button>
+            <button>03 · <span data-i18n="step.ottApps">OTT &amp; Cast Apps</span></button>
+          </div>
+          <div class="demo-progress"><i></i></div>
+        </div>
+      </article>
+
+      <article class="split reverse reveal" data-steps>
+        <div class="split-copy">
+          <span class="eyebrow" style="background:#FFF1F2;color:#E11D48" data-i18n="sol4.eyebrow">Guest services &amp; assistance</span>
+          <h3 data-i18n="sol4.title">Instant room service, housekeeping &amp; 24/7 assistance</h3>
+          <p class="accent" data-i18n="sol4.accent">Every guest amenity request dispatched to staff in seconds.</p>
+          <p class="body" data-i18n="sol4.body">From extra towels and drinking water to laundry, luggage and maintenance, guests submit requests in seconds. Includes 24/7 reception contact, manager assistance and emergency hotlines.</p>
+          <ul class="check-list">
+            <li><span class="tick">✓</span><span data-i18n="sol4.li1">Housekeeping, maintenance &amp; amenity dispatch</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol4.li2">Live multi-stage request tracker</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol4.li3">24/7 front desk, duty manager &amp; emergency contacts</span></li>
+            <li><span class="tick">✓</span><span data-i18n="sol4.li4">Automatic PMS folio posting at checkout</span></li>
+          </ul>
+          <a href="#book-demo" class="text-link" data-i18n="sol4.cta">Request a demo for Guest Services <span class="arrow">→</span></a>
+        </div>
+        <div>
+          <div class="split-visual">
+            <div class="ui-mock">
+              <div class="ui-mock-head"><b data-i18n="ui.requests">Guest Requests</b><span data-i18n="ui.inProgress">In progress</span></div>
+              <div class="ui-mock-row"><i></i><div class="ui-mock-lines"><i></i><i></i><i></i></div></div>
+              <div class="ui-mock-row"><i class="b"></i><div class="ui-mock-lines"><i></i><i></i><i></i></div></div>
+              <div class="ui-mock-row"><i class="c"></i><div class="ui-mock-lines"><i></i><i></i><i></i></div></div>
+              <div class="ui-mock-float">✓ <span data-i18n="ui.dispatched">Dispatched</span></div>
+            </div>
+          </div>
+          <div class="demo-steps" data-step-buttons>
+            <button class="active">01 · <span data-i18n="step.liveDemo">Live Demo</span></button>
+            <button>02 · <span data-i18n="step.guestRequests">Guest Requests</span></button>
+            <button>03 · <span data-i18n="step.serviceTracker">Service Tracker</span></button>
+          </div>
+          <div class="demo-progress"><i></i></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORIES ============ -->
+<section class="section" id="stories" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 data-i18n="stories.title">Hotels that use HuiBu are saying…</h2>
+      <p data-i18n="stories.sub">Hear directly from general managers and owners who elevated guest satisfaction and profitability.</p>
+    </div>
+    <div class="story-grid">
+      <article class="story-card reveal"><div class="story-photo s1"><span class="shape a"></span><span class="shape b"></span><span class="shape c"></span></div><div class="story-body"><p class="story-quote" data-i18n="stories.q1">"QR dining transformed our room service into our fastest-growing revenue stream. Guests order within 2 minutes of entering."</p><div class="story-person"><div class="avatar" style="background:#5B3DE2">AS</div><div><b data-i18n="stories.n1">Anand Sundaram</b><span data-i18n="stories.r1">General Manager · Boutique Hotel</span></div></div></div></article>
+      <article class="story-card reveal"><div class="story-photo s2"><span class="shape a"></span><span class="shape b"></span><span class="shape c"></span></div><div class="story-body"><p class="story-quote" data-i18n="stories.q2">"Zero front desk queues during peak check-in. Unified guest messaging and digital check-in saved us 4 staff hours daily."</p><div class="story-person"><div class="avatar" style="background:#0EA5E9">VM</div><div><b data-i18n="stories.n2">Vikram Mehta</b><span data-i18n="stories.r2">Hotel Owner · Resort Group</span></div></div></div></article>
+      <article class="story-card reveal"><div class="story-photo s3"><span class="shape a"></span><span class="shape b"></span><span class="shape c"></span></div><div class="story-body"><p class="story-quote" data-i18n="stories.q3">"Our guests love controlling lights and ordering poolside cocktails without installing any app. It felt like true 5-star hospitality."</p><div class="story-person"><div class="avatar" style="background:#F97316">MN</div><div><b data-i18n="stories.n3">Maya Nambiar</b><span data-i18n="stories.r3">Director of Operations · Luxury Resort</span></div></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band section-tight">
+  <div class="container cta-inner">
+    <div><h2 data-i18n="cta.title">Transform every guest touchpoint into better experiences and better business.</h2><p data-i18n="cta.sub">One platform. Every room. Every language.</p></div>
+    <a href="#book-demo" class="btn btn-white btn-lg" data-i18n="nav.bookDemo">Book a Demo</a>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="feat.eyebrow">Core capabilities</span>
+      <h2 data-i18n="feat.title">Everything your hotel needs for a connected guest experience.</h2>
+      <p data-i18n="feat.sub">Eight core capabilities delivering complete digital entertainment, contactless dining, and guest service automation.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="feature-card reveal"><div class="feature-ic" style="background:#EEF2FF;color:#5B3DE2">▣</div><div class="feature-tag" data-i18n="feat.1tag">Live entertainment</div><h3 data-i18n="feat.1t">Live TV &amp; EPG Guide</h3><p data-i18n="feat.1d">Full electronic program guide with regional, sports, movie and news channels in HD clarity.</p><a href="#book-demo" class="text-link" data-i18n="common.discuss">Discuss this capability <span class="arrow">→</span></a></article>
+      <article class="feature-card reveal"><div class="feature-ic" style="background:#FFF1F2;color:#E11D48">▶</div><div class="feature-tag" data-i18n="feat.2tag">Video on demand</div><h3 data-i18n="feat.2t">Movies &amp; Shows (VOD)</h3><p data-i18n="feat.2d">An extensive on-demand cinema catalog with intuitive remote playback and room billing.</p><a href="#book-demo" class="text-link" data-i18n="common.discuss">Discuss this capability <span class="arrow">→</span></a></article>
+      <article class="feature-card reveal"><div class="feature-ic" style="background:#F0F9FF;color:#0284C7">▤</div><div class="feature-tag" data-i18n="feat.3tag">Streaming apps</div><h3 data-i18n="feat.3t">OTT Apps &amp; Casting</h3><p data-i18n="feat.3d">Direct access to leading streaming apps plus secure guest casting from personal devices.</p><a href="#book-demo" class="text-link" data-i18n="common.discuss">Discuss this capability <span class="arrow">→</span></a></article>
+      <article class="feature-card reveal"><div class="feature-ic" style="background:#ECFDF5;color:#059669">⌁</div><div class="feature-tag" data-i18n="feat.4tag">Instant Wi-Fi</div><h3 data-i18n="feat.4t">Wi-Fi Screen &amp; QR Connect</h3><p data-i18n="feat.4d">On-screen QR code lets guests connect instantly without typing a password.</p><a href="#book-demo" class="text-link" data-i18n="common.discuss">Discuss this capability <span class="arrow">→</span></a></article>
+      <article class="feature-card reveal"><div class="feature-ic" style="background:#FFFBEB;color:#D97706">◉</div><div class="feature-tag" data-i18n="feat.5tag">Mobile dining</div><h3 data-i18n="feat.5t">QR Dining &amp; Order Tracker</h3><p data-i18n="feat.5d">Digital menu with dietary filters, local currency checkout and live kitchen tracking.</p><a href="#book-demo" class="text-link" data-i18n="common.discuss">Discuss this capability <span class="arrow">→</span></a></article>
+      <article class="feature-card reveal"><div class="feature-ic" style="background:#F5F3FF;color:#7C3AED">✆</div><div class="feature-tag" data-i18n="feat.6tag">Guest assistance</div><h3 data-i18n="feat.6t">Room Service &amp; Housekeeping</h3><p data-i18n="feat.6d">One-touch requests for towels, water, cleaning, luggage and technical maintenance.</p><a href="#book-demo" class="text-link" data-i18n="common.discuss">Discuss this capability <span class="arrow">→</span></a></article>
+      <article class="feature-card reveal"><div class="feature-ic" style="background:#ECFEFF;color:#0891B2">▦</div><div class="feature-tag" data-i18n="feat.7tag">Stay information</div><h3 data-i18n="feat.7t">My Stay &amp; Billing Folio</h3><p data-i18n="feat.7d">Transparent in-room review of reservation dates, dining bills and express checkout.</p><a href="#book-demo" class="text-link" data-i18n="common.discuss">Discuss this capability <span class="arrow">→</span></a></article>
+      <article class="feature-card reveal"><div class="feature-ic" style="background:#FFF7ED;color:#EA580C">◇</div><div class="feature-tag" data-i18n="feat.8tag">Explore nearby</div><h3 data-i18n="feat.8t">Local Tours &amp; Rentals</h3><p data-i18n="feat.8d">Curated attractions with distances and drive times, plus on-demand vehicle rental.</p><a href="#book-demo" class="text-link" data-i18n="common.discuss">Discuss this capability <span class="arrow">→</span></a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / STATS ============ -->
+<section class="about-band section">
+  <div class="container about-grid">
+    <div class="about-copy reveal">
+      <span class="eyebrow" data-i18n="about.eyebrow">HuiBu Technology · Est. 2016</span>
+      <h2 data-i18n="about.title">Designed for how modern hotels entertain and serve their guests.</h2>
+      <p data-i18n="about.p1">Since 2016, HuiBu has delivered hotel IPTV, interactive guest portals and connected room systems to properties across Asia, the Middle East, Europe and the Americas — keeping every guest touchpoint connected without requiring any app downloads.</p>
+      <p data-i18n="about.p2">Hotels reduce repeated reception calls, increase in-room dining orders, and smoothly guide guests from the big screen to mobile service actions with dynamic QR handoffs — all in the guest's own language.</p>
+      <a href="#book-demo" class="btn btn-primary" data-i18n="common.requestDemo">Request a demo <span class="arrow">→</span></a>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><b data-count="500">500+</b><span data-i18n="stat.1t">IPTV Projects</span><small data-i18n="stat.1d">Deployed across 30+ countries</small></div>
+      <div class="stat"><b data-count="0">0</b><span data-i18n="stat.2t">Zero App Downloads</span><small data-i18n="stat.2d">Instant browser access via room QR</small></div>
+      <div class="stat"><b>4K HD</b><span data-i18n="stat.3t">Hotel IPTV &amp; OTT</span><small data-i18n="stat.3d">Live TV, EPG, VOD &amp; streaming apps</small></div>
+      <div class="stat"><b>24 / 7</b><span data-i18n="stat.4t">Proactive Support</span><small data-i18n="stat.4d">Dedicated engineering &amp; remote monitoring</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTEGRATIONS ============ -->
+<section class="section" id="integrations">
+  <div class="container">
+    <div class="panel reveal">
+      <div class="section-head" style="margin-bottom:1.8rem">
+        <span class="eyebrow" data-i18n="int.eyebrow">Integrations &amp; ecosystem</span>
+        <h2 data-i18n="int.title">Seamlessly connecting to your hotel PMS &amp; POS systems.</h2>
+        <p data-i18n="int.sub">The platform plugs directly into your existing property management systems, F&amp;B POS billing and smart door locks with zero disruption to daily operations.</p>
+      </div>
+      <ul class="integration-note">
+        <li><span class="tick">✓</span><span data-i18n="int.li1">Real-time guest check-in greeting &amp; automated room folio sync</span></li>
+        <li><span class="tick">✓</span><span data-i18n="int.li2">In-room dining orders posted directly to the restaurant POS</span></li>
+        <li><span class="tick">✓</span><span data-i18n="int.li3">Compatible with leading PMS platforms and Android TV, Samsung LYNK &amp; LG Pro:Centric</span></li>
+      </ul>
+      <div class="logo-wall">
+        <div class="logo-cell"><b>Oracle Hospitality</b><span>OPERA Cloud &amp; v5</span></div>
+        <div class="logo-cell"><b>Mews Systems</b><span>Modern Cloud PMS</span></div>
+        <div class="logo-cell"><b>Cloudbeds</b><span>Hospitality Management</span></div>
+        <div class="logo-cell"><b>Apaleo</b><span>Open Hospitality API</span></div>
+        <div class="logo-cell"><b>Salto Systems</b><span>Smart Digital Locks</span></div>
+        <div class="logo-cell"><b>Assa Abloy</b><span>VingCard Access</span></div>
+        <div class="logo-cell"><b>RMS Cloud</b><span>Property Software</span></div>
+        <div class="logo-cell"><b>Guesty</b><span>Property Management</span></div>
+        <div class="logo-cell"><b>Protel</b><span>Hotel PMS System</span></div>
+        <div class="logo-cell"><b>RoomRaccoon</b><span>All-in-one Hotel PMS</span></div>
+        <div class="logo-cell"><b>SiteMinder</b><span>Channel &amp; Booking</span></div>
+        <div class="logo-cell"><b>Agilysys</b><span>Enterprise POS &amp; PMS</span></div>
+      </div>
+      <div style="text-align:center;margin-top:1.6rem"><a href="#book-demo" class="text-link" data-i18n="int.cta">Check compatibility with your PMS <span class="arrow">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPLOYMENT / PRICING ============ -->
+<section class="section" id="pricing" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="dep.eyebrow">Deployment &amp; architecture</span>
+      <h2 data-i18n="dep.title">One platform, three deployment options.</h2>
+      <p data-i18n="dep.sub">Engineered to match your property's network infrastructure — choose cloud agility, hybrid zero-downtime reliability, or complete on-premise control.</p>
+    </div>
+    <div class="price-grid">
+      <article class="price-card reveal"><h3 data-i18n="dep.1t">Cloud Deployment</h3><p class="desc" data-i18n="dep.1d">Centrally managed in the cloud with zero on-site server hardware.</p><ul class="price-list">
+        <li><span class="tick">✓</span><span data-i18n="dep.1li1">Cloud-hosted IPTV &amp; CMS platform</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.1li2">QR Dining &amp; mobile guest portal</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.1li3">Live TV &amp; channel management</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.1li4">Automatic cloud software updates</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.1li5">24/7 remote technical support</span></li>
+      </ul><a href="#book-demo" class="btn btn-outline" data-i18n="common.requestPricing">Request Pricing</a></article>
+
+      <article class="price-card featured reveal"><span class="price-ribbon" data-i18n="dep.recommended">RECOMMENDED ARCHITECTURE</span><h3 data-i18n="dep.2t">Hybrid Cloud Deployment</h3><p class="desc" data-i18n="dep.2d">Cloud control paired with local on-premise cache for zero latency &amp; offline continuity.</p><ul class="price-list">
+        <li><span class="tick">✓</span><span data-i18n="dep.2li1">Everything in Cloud Deployment</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.2li2">Local edge caching for zero-latency video</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.2li3">100% offline survivability during WAN downtime</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.2li4">Smart room IoT &amp; TV integration</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.2li5">Advanced bandwidth optimization</span></li>
+      </ul><a href="#book-demo" class="btn btn-primary" data-i18n="common.requestPricing">Request Pricing</a></article>
+
+      <article class="price-card reveal"><h3 data-i18n="dep.3t">On-Premises Deployment</h3><p class="desc" data-i18n="dep.3d">Dedicated local server infrastructure for total data sovereignty &amp; network control.</p><ul class="price-list">
+        <li><span class="tick">✓</span><span data-i18n="dep.3li1">Dedicated local server rack installation</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.3li2">Complete internal network isolation</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.3li3">Full PMS, POS &amp; door-lock bi-directional sync</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.3li4">Multi-property enterprise configuration</span></li>
+        <li><span class="tick">✓</span><span data-i18n="dep.3li5">Dedicated on-site engineer deployment</span></li>
+      </ul><a href="#book-demo" class="btn btn-outline" data-i18n="dep.customQuote">Custom Enterprise Quote</a></article>
+    </div>
+    <div style="text-align:center;margin-top:1.5rem"><a href="#book-demo" class="text-link" data-i18n="dep.consult">Request custom enterprise consultation <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span>
+      <h2 data-i18n="faq.title">Common questions, honest answers.</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q1">Do guests need to download an app?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a1">No. The platform is 100% browser-based. Guests simply scan the QR code on the in-room TV or bedside stand with their phone camera to open dining, room service and hotel information without installing anything.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q2">What entertainment features are included on the in-room TV?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a2">Personalized guest greetings, HD Live TV with a full channel guide (EPG), video-on-demand movies &amp; shows, and leading OTT streaming apps — all inside one hotel-branded interface.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q3">How does QR dining and mobile ordering work?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a3">Each room has a unique QR code. Guests browse the digital menu with photos, filter by dietary preference, select portions and place room-linked orders. Kitchen staff receive orders with room numbers, and guests track status live.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q4">What deployment architectures do you support?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a4">Three models: Cloud (fully hosted, no on-site servers), Hybrid (cloud management with local edge caching and 100% offline survivability) and On-Premises (dedicated local server for total network control).</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q5">Which TV models and hardware are compatible?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a5">Native on commercial Smart TVs running Android TV, Samsung LYNK and LG Pro:Centric. For standard HDMI TVs we supply compact 4K media set-top boxes with hotel remotes — no forced TV replacement.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q6">Can it integrate with our existing PMS and POS?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a6">Yes. Two-way integration with leading PMS and F&amp;B POS platforms personalizes greetings, posts dining charges to guest folios and synchronizes room status in real time.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q7">Does hotel IPTV consume external internet bandwidth?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a7">No. Live TV streams over the property's internal LAN using local multicast edge servers — zero internet strain, sub-second channel switching and broadcast-quality 4K/HD without buffering.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q8">Can it work on existing coaxial or Ethernet cabling?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a8">Yes. It runs over existing Cat5e/Cat6 LAN, enterprise Wi-Fi 5/6, and coaxial lines using IP-over-Coax (EoC) transceivers — eliminating expensive re-cabling and downtime.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q9">How do dining and service charges post to checkout bills?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a9">Every QR order is authenticated with the guest room number. Approved charges post automatically to the PMS folio balance, ensuring zero discrepancy at checkout.</p></div></div>
+      <div class="faq-item"><button class="faq-q"><span data-i18n="faq.q10">Is the guest interface available in multiple languages?</span><span class="plus">+</span></button><div class="faq-a"><p data-i18n="faq.a10">Yes. TV and mobile interfaces support multiple languages out of the box, and additional locales can be added per property so every guest sees content in their own language.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOK A DEMO ============ -->
+<section class="section demo-section" id="book-demo" style="padding-top:0">
+  <div class="container demo-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="demo.eyebrow">Personalized platform walkthrough</span>
+      <h2 style="font-size:var(--text-h2);font-weight:800;letter-spacing:-.035em;line-height:1.22;margin:1rem 0" data-i18n="demo.title">See HuiBu Hotel IPTV in action at your property.</h2>
+      <p style="color:var(--color-ink-muted);font-size:.95rem;line-height:1.75" data-i18n="demo.sub">Transform your guest stay from check-in to check-out. Schedule a 15-minute product tour tailored to your rooms, F&amp;B operations, in-room entertainment and smart IoT setup.</p>
+      <div class="demo-perks">
+        <div class="demo-perk"><div class="ic">✓</div><div><b data-i18n="demo.p1t">Zero App Download Required</b><span data-i18n="demo.p1d">Guests access menus, room controls and requests directly via browser scan.</span></div></div>
+        <div class="demo-perk"><div class="ic">✓</div><div><b data-i18n="demo.p2t">Built for Global Hospitality</b><span data-i18n="demo.p2d">Multi-currency billing, regional channels and multi-lingual guest interfaces.</span></div></div>
+        <div class="demo-perk"><div class="ic">✓</div><div><b data-i18n="demo.p3t">Proven Across 500+ Hotels</b><span data-i18n="demo.p3d">24/7 dedicated engineering support and fast turnkey onboarding.</span></div></div>
+      </div>
+    </div>
+
+    <div class="form-card reveal">
+      <h3 style="font-size:1.2rem;font-weight:800;margin-bottom:.4rem" data-i18n="demo.formTitle">Schedule Your Demo</h3>
+      <p style="font-size:.83rem;color:var(--color-ink-subtle);margin-bottom:1.2rem" data-i18n="demo.formSub">No credit card required. Free customized preview.</p>
+      <form id="demoForm" novalidate>
+        <div class="form-error" id="formError"></div>
+        <div class="form-row">
+          <div class="field"><label for="fName"><span data-i18n="form.name">Your Name</span> <span class="req">*</span></label><input id="fName" name="name" required data-i18n-placeholder="form.namePh" placeholder="Full name"></div>
+          <div class="field"><label for="fHotel"><span data-i18n="form.hotel">Hotel / Property Name</span> <span class="req">*</span></label><input id="fHotel" name="hotel" required data-i18n-placeholder="form.hotelPh" placeholder="Property name"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="fEmail"><span data-i18n="form.email">Work Email</span> <span class="req">*</span></label><input id="fEmail" name="email" type="email" required data-i18n-placeholder="form.emailPh" placeholder="name@hotel.com"></div>
+          <div class="field"><label for="fPhone"><span data-i18n="form.phone">Phone / WhatsApp</span> <span class="req">*</span></label><input id="fPhone" name="phone" required data-i18n-placeholder="form.phonePh" placeholder="+00 000 000 000"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="fType" data-i18n="form.type">Property Type</label><select id="fType" name="type"><option value="" data-i18n="form.typeSelect">Select type</option><option data-i18n="form.type1">Boutique Hotel</option><option data-i18n="form.type2">City / Business Hotel</option><option data-i18n="form.type3">Resort &amp; Spa</option><option data-i18n="form.type4">Hotel Group / Chain</option><option data-i18n="form.type5">Serviced Apartments</option></select></div>
+          <div class="field"><label for="fRooms" data-i18n="form.rooms">Approx. Rooms</label><select id="fRooms" name="rooms"><option value="" data-i18n="form.roomsSelect">Select range</option><option>1 – 50</option><option>51 – 150</option><option>151 – 300</option><option>301 – 600</option><option>600+</option></select></div>
+        </div>
+        <div class="field"><label for="fMsg" data-i18n="form.message">Specific requirements or questions</label><textarea id="fMsg" name="message" data-i18n-placeholder="form.messagePh" placeholder="Tell us about your current TV system, PMS and timeline…"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%" data-i18n="form.submit">Request Personalized Demo</button>
+        <p class="form-note" data-i18n="form.note">🔒 We respect your privacy. Your message goes directly to our engineering &amp; hospitality team.</p>
+        <div class="form-success" id="formSuccess"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="section-tight" style="background:#fff;border-block:1px solid var(--color-border)">
+  <div class="container eco-grid" style="grid-template-columns:repeat(4,1fr)">
+    <div><b style="display:block;font-size:.9rem;margin-bottom:.25rem" data-i18n="trust.1t">Hardware Agnostic</b><span style="font-size:.8rem;color:var(--color-ink-subtle)" data-i18n="trust.1d">Samsung, LG, Android TV &amp; legacy set-top boxes</span></div>
+    <div><b style="display:block;font-size:.9rem;margin-bottom:.25rem" data-i18n="trust.2t">Zero-Latency Streaming</b><span style="font-size:.8rem;color:var(--color-ink-subtle)" data-i18n="trust.2d">Multicast IPTV with custom EPG &amp; OTT</span></div>
+    <div><b style="display:block;font-size:.9rem;margin-bottom:.25rem" data-i18n="trust.3t">PMS Two-Way Sync</b><span style="font-size:.8rem;color:var(--color-ink-subtle)" data-i18n="trust.3d">Automated guest billing &amp; service sync</span></div>
+    <div><b style="display:block;font-size:.9rem;margin-bottom:.25rem" data-i18n="trust.4t">Multilingual by Default</b><span style="font-size:.8rem;color:var(--color-ink-subtle)" data-i18n="trust.4d">TV &amp; mobile UI in every guest's language</span></div>
+  </div>
+</section>
+
+<!-- ============ CALLBACK ============ -->
+<section class="callback section-tight">
+  <div class="container callback-inner">
+    <div><span class="eyebrow" style="background:rgba(255,255,255,.12);color:#C7B8FF" data-i18n="cb.eyebrow">Instant consultation</span><h3 style="margin-top:.7rem" data-i18n="cb.title">Upgrade your hotel in-room entertainment</h3><p data-i18n="cb.sub">Leave your phone or email — our engineering team replies with hardware feasibility within 15 minutes.</p></div>
+    <form class="callback-form" id="callbackForm"><input type="text" id="cbInput" required data-i18n-placeholder="cb.placeholder" placeholder="Phone number or email"><button type="submit" class="btn btn-primary" data-i18n="cb.btn">Request Callback</button></form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#hero"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="#5B3DE2"/><path d="M8 18l12-8 12 8v12H8V18z" fill="#fff"/><path d="M6 18l14-9 14 9" fill="none" stroke="#F2D9A8" stroke-width="2.4" stroke-linecap="round"/><rect x="17" y="22" width="6" height="8" rx="1" fill="#5B3DE2"/></svg><span class="brand-name">Hotel<span>IPTV</span></span></a>
+        <p data-i18n="foot.desc">HuiBu Technology engineers high-definition Hotel IPTV systems, interactive digital concierge hubs and contactless dining ecosystems for hotels worldwide.</p>
+        <p class="footer-address" data-i18n="foot.addr">Global HQ · Sales &amp; Engineering Support<br>24/7 Monitoring &amp; 99.99% Uptime · Mon–Sat 09:00–19:00</p>
+      </div>
+      <div class="footer-col"><h4 data-i18n="foot.col1">Solutions</h4><a href="#solutions" data-i18n="foot.l1">Hotel IPTV &amp; EPG Platform</a><a href="#solutions" data-i18n="foot.l2">Contactless QR Dining</a><a href="#solutions" data-i18n="foot.l3">Digital Guest Concierge</a><a href="#solutions" data-i18n="foot.l4">Smart Room Automation</a><a href="#solutions" data-i18n="foot.l5">Solutions Overview</a></div>
+      <div class="footer-col"><h4 data-i18n="foot.col2">Platform</h4><a href="#features" data-i18n="foot.l6">Core IPTV Capabilities</a><a href="#stories" data-i18n="foot.l7">Customer Stories</a><a href="#integrations" data-i18n="foot.l8">PMS &amp; Integrations</a><a href="#pricing" data-i18n="foot.l9">Deployment &amp; Pricing</a><a href="#faq" data-i18n="foot.l10">FAQ</a></div>
+      <div class="footer-col"><h4 data-i18n="foot.col3">Talk to Engineering</h4>
+        <div class="footer-contact"><b data-i18n="foot.contactTitle">Need a custom setup?</b><a href="mailto:hubuqing@huibu8.net">hubuqing@huibu8.net</a><a href="https://wa.me/8618150600095" target="_blank" rel="noopener">WhatsApp / WeChat: +86 18150600095</a><a href="#book-demo" data-i18n="foot.l11">Book a Live Demo</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> <span data-i18n="foot.rights">HuiBu Technology. All rights reserved.</span></span>
+      <span data-i18n="foot.tagline">Empowering hotel digital entertainment worldwide.</span>
+      <span><a href="#hero" data-i18n="foot.backTop">Back to top ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script src="assets/js/locales/en.js"></script>
+<script src="assets/js/locales/zh.js"></script>
+<script src="assets/js/locales/es.js"></script>
+<script src="assets/js/locales/fr.js"></script>
+<script src="assets/js/locales/de.js"></script>
+<script src="assets/js/locales/ar.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# WorkBuddy 内部数据，不参与部署
+.workbuddy/
+
+# 系统/编辑器垃圾文件
+Thumbs.db
+.DS_Store
+*.log
+*.tmp
+
+# 本地预览/临时产物
+node_modules/
+.playwright-cli/
