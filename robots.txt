@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hoteliptv.example.com/sitemap.xml
+Sitemap: https://hotel.hoteliptv.cc/sitemap.xml
